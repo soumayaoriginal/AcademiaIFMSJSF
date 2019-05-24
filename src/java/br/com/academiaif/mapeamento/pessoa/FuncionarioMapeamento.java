@@ -5,7 +5,7 @@
  */
 package br.com.academiaif.mapeamento.pessoa;
 
-import br.com.academiaif.mampeamento.outros.CargoMapeamento;
+import br.com.academiaif.mapeamento.outros.CargoMapeamento;
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
