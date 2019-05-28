@@ -18,7 +18,7 @@ import javax.persistence.MappedSuperclass;
 public abstract class PessoaMapeamento {
     @Id
     @GeneratedValue
-    private long id;
+    private long idPessoa;
     @Column(length = 100, nullable = false)
     private String nome;
     @Column(nullable = false)
@@ -26,12 +26,12 @@ public abstract class PessoaMapeamento {
     @Column(length = 11, nullable = false)
     private String cpf;
 
-    public long getId() {
-        return id;
+    public long getIdPessoa() {
+        return idPessoa;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setIdPessoa(long id) {
+        this.idPessoa = id;
     }
 
     public String getNome() {
