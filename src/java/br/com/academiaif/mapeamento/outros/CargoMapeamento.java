@@ -5,12 +5,19 @@
  */
 package br.com.academiaif.mapeamento.outros;
 
+import br.com.academiaif.mapeamento.pessoa.ClienteMapeamento;
+import br.com.academiaif.mapeamento.pessoa.FuncionarioMapeamento;
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 
 /**
  *
@@ -21,20 +28,23 @@ import javax.persistence.Table;
 public class CargoMapeamento implements Serializable{
     @Id
     @GeneratedValue
-    private long id;
+    private long idCargo;
     @Column(length = 30, nullable = false)
     private String nome;
     @Column(nullable = false)
     private String descricao;
     @Column(nullable = false)
     private double salario;
-
-    public long getId() {
-        return id;
+    @OneToMany(mappedBy = "cargoMapeamento", fetch = FetchType.LAZY)
+    @Cascade(CascadeType.SAVE_UPDATE)
+    private List<FuncionarioMapeamento> listaDeFuncionarios;
+    
+    public long getIdCargo() {
+        return idCargo;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setIdCargo(long id) {
+        this.idCargo = id;
     }
 
     public String getNome() {
@@ -59,6 +69,14 @@ public class CargoMapeamento implements Serializable{
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    public List<FuncionarioMapeamento> getListaDeFuncionarios() {
+        return listaDeFuncionarios;
+    }
+
+    public void setListaDeFuncionarios(List<FuncionarioMapeamento> listaDeFuncionarios) {
+        this.listaDeFuncionarios = listaDeFuncionarios;
     }
     
 }

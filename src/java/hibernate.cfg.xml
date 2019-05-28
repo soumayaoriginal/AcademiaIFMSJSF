@@ -49,5 +49,7 @@ Contributor(s):
     <property name="hibernate.hbm2ddl.auto">update</property>
     <mapping class="br.com.academiaif.mapeamento.pessoa.ClienteMapeamento"/>
     <mapping class="br.com.academiaif.mapeamento.outros.PlanoMapeamento"/>
+    <mapping class="br.com.academiaif.mapeamento.pessoa.FuncionarioMapeamento"/>
+    <mapping class="br.com.academiaif.mapeamento.outros.CargoMapeamento"/>
   </session-factory>
 </hibernate-configuration>

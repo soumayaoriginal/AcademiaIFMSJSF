@@ -8,9 +8,14 @@ package br.com.academiaif.mapeamento.pessoa;
 import br.com.academiaif.mapeamento.outros.CargoMapeamento;
 import java.io.Serializable;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 /**
  *
@@ -19,7 +24,13 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "funcionarios")
 public class FuncionarioMapeamento extends PessoaMapeamento implements Serializable{
+    
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "idCargo", insertable = true, updatable = true)
+    @Fetch(FetchMode.JOIN)
+    @Cascade(CascadeType.SAVE_UPDATE)
     private CargoMapeamento cargoMapeamento;
+    
     private int satisfacaoDoCliente;
 
     public CargoMapeamento getCargoMapeamento() {
