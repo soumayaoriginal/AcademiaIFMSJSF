@@ -5,9 +5,7 @@
  */
 package br.com.acabemiaif.controller;
 
-import br.com.academiaif.util.NewHibernateUtil;
 import javax.faces.bean.ManagedBean;
-import org.hibernate.SessionFactory;
 
 /**
  *
@@ -15,9 +13,10 @@ import org.hibernate.SessionFactory;
  */
 @ManagedBean
 public class ClienteController {
+    
     public void salvar(){
-        SessionFactory sessionFac = NewHibernateUtil.getSessionFactory();
-        
-        sessionFac.close();
+        //this.planoRepository.salvar(planoMapeamento);
     }
+    
+    
 }

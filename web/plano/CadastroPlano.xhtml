@@ -13,10 +13,10 @@ and open the template in the editor.
             <h2>Cadastro de Plano</h2>
             <h:form>
                 <h:panelGrid columns="1">
-                    Nome: <h:inputText value=""/>
-                    Descrição: <h:inputTextarea value="" />
-                    Valor: <h:inputText value="" />
-                    <h:commandButton value="Salvar" />
+                    Nome: <h:inputText value="#{planoController.planoMapeamento.nome}"/>
+                    Descrição: <h:inputTextarea value="#{planoController.planoMapeamento.descricao}" />
+                    Valor: <h:inputText value="#{planoController.planoMapeamento.valor}" />
+                    <h:commandButton value="Salvar" action="#{planoController.salvar()}"/>
                 </h:panelGrid>
             </h:form>
         </div>
