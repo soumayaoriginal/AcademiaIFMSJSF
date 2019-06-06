@@ -11,30 +11,38 @@ and open the template in the editor.
     <head>
         <title>TODO supply a title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </head>
     <body>
-        <ui:insert name="cabecalho">
-            <div>
-                <h1>AcademiaIF</h1>
+        <div class="container">
+            <ui:insert name="cabecalho">
+                <div class="row">
+                    <h1>AcademiaIF</h1>
+                </div>
+            </ui:insert>
+            <div class="row">
+                <div class="col-md-4">
+                    <ui:insert name="menu">
+                        <ul>
+                            <li><h:link value="Home" outcome="home" /></li>
+                            <li><h:link value="Cadastrar Plano" outcome="cadastroPlano" /></li>
+                        </ul>
+                    </ui:insert>
+                </div>
+                <div class="col-md-8">
+                    <ui:insert name="corpo">
+                        <div>
+                            <h1>Template</h1>
+                        </div>
+                    </ui:insert>
+                </div>
             </div>
-        </ui:insert>
-        <ui:insert name="menu">
-            <div>
-                <ul>
-                    <li><h:link value="Home" outcome="home" /></li>
-                    <li><h:link value="Cadastrar Plano" outcome="cadastroPlano" /></li>
-                </ul>
-            </div>
-        </ui:insert>
-        <ui:insert name="corpo">
-            <div>
-                <h1>Template</h1>
-            </div>
-        </ui:insert>
-        <ui:insert name="rodape">
-            <div>
-                <h4>Rodapé</h4>
-            </div>
-        </ui:insert>
+            <ui:insert name="rodape">
+                <div>
+                    <h4>Rodapé</h4>
+                </div>
+            </ui:insert>
+        </div>
     </body>
 </html>
