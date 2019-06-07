@@ -7,6 +7,8 @@ package br.com.acabemiaif.controller;
 
 import br.com.academiaif.mapeamento.outros.PlanoMapeamento;
 import br.com.academiaif.repository.PlanoRepository;
+import java.util.ArrayList;
+import java.util.List;
 import javax.faces.bean.ManagedBean;
 
 /**
@@ -17,14 +19,20 @@ import javax.faces.bean.ManagedBean;
 public class PlanoController {
     private PlanoMapeamento planoMapeamento;
     private PlanoRepository planoRepository;
+    private List<PlanoMapeamento> listaDePlanos;
     
     public PlanoController(){
         this.planoMapeamento = new PlanoMapeamento();
         this.planoRepository = new PlanoRepository();
+        this.listaDePlanos = new ArrayList<>();
     }
     
     public void salvar(){
         this.planoRepository.salvar(planoMapeamento);
+    }
+    
+    public void buscarTodos(){
+        this.listaDePlanos = this.planoRepository.buscarTodos();
     }
 
     public PlanoMapeamento getPlanoMapeamento() {
@@ -42,5 +50,14 @@ public class PlanoController {
     public void setPlanoRepository(PlanoRepository planoRepository) {
         this.planoRepository = planoRepository;
     }
+
+    public List<PlanoMapeamento> getListaDePlanos() {
+        return listaDePlanos;
+    }
+
+    public void setListaDePlanos(List<PlanoMapeamento> listaDePlanos) {
+        this.listaDePlanos = listaDePlanos;
+    }
+    
     
 }

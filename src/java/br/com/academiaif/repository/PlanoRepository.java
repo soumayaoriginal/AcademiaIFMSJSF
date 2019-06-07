@@ -7,6 +7,7 @@ package br.com.academiaif.repository;
 
 import br.com.academiaif.mapeamento.outros.PlanoMapeamento;
 import br.com.academiaif.dao.Conexao;
+import java.util.List;
 
 /**
  *
@@ -18,5 +19,13 @@ public class PlanoRepository extends Conexao{
         Conectar();
         getSession().save(plano);
         Fechar();
+    }
+    
+    public List<PlanoMapeamento> buscarTodos(){
+        List<PlanoMapeamento> listaDePlanos;
+        Conectar();
+        listaDePlanos = getSession().createQuery("from PlanoMapeamento").list();
+        Fechar();
+        return listaDePlanos;
     }
 }
