@@ -3,8 +3,11 @@
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
         <Node id="template/template.xhtml" x="150" y="150" zoom="true"/>
-        <Node id="plano/CadastroPlano.xhtml" x="287" y="35" zoom="true"/>
         <Node id="index.xhtml" x="11" y="20" zoom="true"/>
+        <Node id="cliente/CadastrarCliente.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="plano/CadastroPlano.xhtml" x="287" y="35" zoom="true"/>
+        <Node id="plano/BuscarPlano.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="cliente/BuscarCliente.xhtml" x="400" y="150" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>

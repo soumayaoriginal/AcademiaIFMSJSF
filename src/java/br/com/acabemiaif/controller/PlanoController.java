@@ -7,6 +7,7 @@ package br.com.acabemiaif.controller;
 
 import br.com.academiaif.mapeamento.outros.PlanoMapeamento;
 import br.com.academiaif.repository.PlanoRepository;
+import converter.PlanoConverter;
 import java.util.ArrayList;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
@@ -20,6 +21,15 @@ public class PlanoController {
     private PlanoMapeamento planoMapeamento;
     private PlanoRepository planoRepository;
     private List<PlanoMapeamento> listaDePlanos;
+    private PlanoConverter planoConverter;
+
+    public PlanoConverter getPlanoConverter() {
+        return planoConverter;
+    }
+
+    public void setPlanoConverter(PlanoConverter planoConverter) {
+        this.planoConverter = planoConverter;
+    }
     
     public PlanoController(){
         this.planoMapeamento = new PlanoMapeamento();
@@ -28,6 +38,7 @@ public class PlanoController {
     }
     
     public void salvar(){
+        
         this.planoRepository.salvar(planoMapeamento);
     }
     

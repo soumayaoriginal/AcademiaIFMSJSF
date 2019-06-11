@@ -28,4 +28,15 @@ public class PlanoRepository extends Conexao{
         Fechar();
         return listaDePlanos;
     }
+
+    public PlanoMapeamento buscarPorId(Long id) {
+        Conectar();
+        PlanoMapeamento planoMapeamento = (PlanoMapeamento) getSession()
+                .createQuery("from PlanoMapeamento where id = :idPlano")
+                .setParameter("idPlano", id)
+                .setMaxResults(1).uniqueResult();
+        Fechar();
+        return planoMapeamento;
+    }
+    
 }
