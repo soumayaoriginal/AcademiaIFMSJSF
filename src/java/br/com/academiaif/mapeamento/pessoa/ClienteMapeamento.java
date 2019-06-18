@@ -13,6 +13,7 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
@@ -32,6 +33,9 @@ public class ClienteMapeamento extends PessoaMapeamento implements Serializable 
     @Cascade(CascadeType.SAVE_UPDATE)
     private PlanoMapeamento planoMapeamento;
     
+    @Transient
+    private Long idPlano;
+    
     @Column(nullable = false)
     private int diaVencimento;
 
@@ -50,5 +54,15 @@ public class ClienteMapeamento extends PessoaMapeamento implements Serializable 
     public void setDiaVencimento(int diaVencimento) {
         this.diaVencimento = diaVencimento;
     }
+
+    public Long getIdPlano() {
+        return idPlano;
+    }
+
+    public void setIdPlano(Long idPlano) {
+        this.idPlano = idPlano;
+    }
+    
+    
 
 }

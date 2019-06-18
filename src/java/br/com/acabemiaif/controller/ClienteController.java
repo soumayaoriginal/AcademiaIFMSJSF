@@ -8,6 +8,7 @@ package br.com.acabemiaif.controller;
 import br.com.academiaif.mapeamento.outros.PlanoMapeamento;
 import br.com.academiaif.mapeamento.pessoa.ClienteMapeamento;
 import br.com.academiaif.repository.ClienteRepository;
+import br.com.academiaif.repository.PlanoRepository;
 import java.util.ArrayList;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
@@ -20,20 +21,23 @@ import javax.faces.bean.ManagedBean;
 public class ClienteController {
     
     private ClienteMapeamento clienteMapeamento;
+    private PlanoRepository planorepo;
     private ClienteRepository clienteRepository;
     private List<ClienteMapeamento> listaDeClientes;
-    private String soumaya;
+    private List<PlanoMapeamento> listaDePlanos;
     
     public ClienteController(){
         this.clienteMapeamento = new ClienteMapeamento();
-        this.clienteMapeamento.setPlanoMapeamento(new PlanoMapeamento());
+        //this.clienteMapeamento.setPlanoMapeamento(new PlanoMapeamento());
         this.clienteRepository = new ClienteRepository();
-        this.listaDeClientes = new ArrayList<>();
-        soumaya = "kjgsddeh";
+        //this.listaDeClientes = new ArrayList<>();
+        this.planorepo= new PlanoRepository();
+        this.listaDePlanos = planorepo.buscarTodos();
     }
     
     public void salvar(){
-        System.out.println(soumaya);
+        PlanoMapeamento plano =this.clienteRepository.buscarPorId(clienteMapeamento.getIdPlano());
+        this.clienteMapeamento.setPlanoMapeamento(plano);
         this.clienteRepository.salvar(clienteMapeamento);
     }
     
@@ -64,15 +68,13 @@ public class ClienteController {
     public void setClienteRepository(ClienteRepository clienteRepository) {
         this.clienteRepository = clienteRepository;
     }
-
-    public String getSoumaya() {
-        return soumaya;
+    
+     public List<PlanoMapeamento> getListaDePlanos() {
+        return listaDePlanos;
     }
 
-    public void setSoumaya(String soumaya) {
-        this.soumaya = soumaya;
+    public void setListaDePlanos(List<PlanoMapeamento> listaDePlanos) {
+        this.listaDePlanos = listaDePlanos;
     }
-    
-    
     
 }

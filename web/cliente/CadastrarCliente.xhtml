@@ -32,10 +32,8 @@ and open the template in the editor.
                 </div>
                 
                 
-                <h:selectOneMenu value="#{clienteController.clienteMapeamento.planoMapeamento.idPlano}" >
-                    <f:selectItems value="#{planoController.listaDePlanos}" var="plano" itemLabel="#{plano.descricao}"
-                                   itemValue="#{plano.idPlano}" />
-                    
+                <h:selectOneMenu id="planoId" value="#{clienteController.clienteMapeamento.idPlano}" >
+                    <f:selectItems value="#{clienteController.listaDePlanos}" var="plano" itemLabel="#{plano.nome}" itemValue="#{plano.idPlano}" />
                 </h:selectOneMenu>
                 
 
