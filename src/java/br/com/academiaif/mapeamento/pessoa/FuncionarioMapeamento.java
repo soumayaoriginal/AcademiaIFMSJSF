@@ -12,6 +12,7 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
@@ -29,6 +30,9 @@ public class FuncionarioMapeamento extends PessoaMapeamento implements Serializa
     @JoinColumn(name = "idCargo", insertable = true, updatable = true)
     @Fetch(FetchMode.JOIN)
     @Cascade(CascadeType.SAVE_UPDATE)
+    
+    @Transient
+    private Long idCargo;
     private CargoMapeamento cargoMapeamento;
     
     private int satisfacaoDoCliente;
@@ -40,6 +44,16 @@ public class FuncionarioMapeamento extends PessoaMapeamento implements Serializa
     public void setCargoMapeamento(CargoMapeamento cargoMapeamento) {
         this.cargoMapeamento = cargoMapeamento;
     }
+
+    public Long getIdCargo() {
+        return idCargo;
+    }
+
+    public void setIdCargo(Long idCargo) {
+        this.idCargo = idCargo;
+    }
+    
+    
 
     public int getSatisfacaoDoCliente() {
         return satisfacaoDoCliente;

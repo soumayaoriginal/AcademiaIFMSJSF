@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="/template/template.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <ui:define name="corpo">
+        <div>
+            <h2>Busca de funcionários</h2>
+            <table class="table" onload="#{funcionarioController.buscarTodos()}">
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Cpf</th>
+                    <th>Salário</th>
+                    <th>Ação</th>
+                </tr>
+                <ui:repeat value="#{funcionarioController.listaDeFuncionarios}" var="funcionario">
+                    <tr>
+                        <td>${funcionario.idFuncionario}</td>
+                        <td>${funcionario.nome}</td>
+                        <td>${funcionario.idade}</td>
+                        <td>${funcionario.cpf}</td>
+                        <td>${funcionario.salario}</td>
+                        <td><h:commandButton class="btn btn-danger" value="Excluir" action="#{funcionarioController.remover(funcionario)}"/></td>
+                    </tr>
+                </ui:repeat>
+            </table>
+        </div>
+    </ui:define>
+</ui:composition>

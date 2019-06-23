@@ -2,12 +2,16 @@
 <Scene Scope="Project" version="2">
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
-        <Node id="template/template.xhtml" x="150" y="150" zoom="true"/>
-        <Node id="index.xhtml" x="11" y="20" zoom="true"/>
-        <Node id="cliente/CadastrarCliente.xhtml" x="650" y="150" zoom="true"/>
-        <Node id="plano/CadastroPlano.xhtml" x="287" y="35" zoom="true"/>
-        <Node id="plano/BuscarPlano.xhtml" x="150" y="300" zoom="true"/>
-        <Node id="cliente/BuscarCliente.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="template/template.xhtml" x="-11" y="-217" zoom="true"/>
+        <Node id="funcionario/BuscarFuncionario.xhtml" x="616" y="738" zoom="true"/>
+        <Node id="index.xhtml" x="-22" y="54" zoom="true"/>
+        <Node id="cargo/BuscarCargo.xhtml" x="634" y="537" zoom="true"/>
+        <Node id="cliente/CadastrarCliente.xhtml" x="176" y="273" zoom="true"/>
+        <Node id="cargo/CadastrarCargo.xhtml" x="175" y="539" zoom="true"/>
+        <Node id="plano/CadastroPlano.xhtml" x="192" y="-129" zoom="true"/>
+        <Node id="funcionario/CadastrarFuncionario.xhtml" x="124" y="744" zoom="true"/>
+        <Node id="plano/BuscarPlano.xhtml" x="647" y="-131" zoom="true"/>
+        <Node id="cliente/BuscarCliente.xhtml" x="634" y="272" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>

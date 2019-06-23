@@ -31,12 +31,6 @@ public class ClienteRepository extends Conexao{
     }
     
     
-    
-    
-    
-    
-    
-    
     public PlanoMapeamento buscarPorId(Long id) {
         Conectar();
         PlanoMapeamento planoMapeamento = (PlanoMapeamento) getSession()

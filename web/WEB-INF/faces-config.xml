@@ -25,6 +25,22 @@
             <from-outcome>buscarCliente</from-outcome>
             <to-view-id>/cliente/BuscarCliente.xhtml</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCargo</from-outcome>
+            <to-view-id>/cargo/CadastrarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCargo</from-outcome>
+            <to-view-id>/cargo/BuscarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarFuncionario</from-outcome>
+            <to-view-id>/funcionario/CadastrarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarFuncionario</from-outcome>
+            <to-view-id>/funcionario/BuscarFuncionario.xhtml</to-view-id>
+        </navigation-case>
     </navigation-rule>
     <navigation-rule>
         <from-view-id>/plano/CadastroPlano.xhtml</from-view-id>
@@ -44,6 +60,26 @@
             <from-outcome>buscarCliente</from-outcome>
             <to-view-id>/cliente/BuscarCliente.xhtml</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarPlano</from-outcome>
+            <to-view-id>/plano/BuscarPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCargo</from-outcome>
+            <to-view-id>/cargo/CadastrarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCargo</from-outcome>
+            <to-view-id>/cargo/BuscarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarFuncionario</from-outcome>
+            <to-view-id>/funcionario/CadastrarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarFuncionario</from-outcome>
+            <to-view-id>/funcionario/BuscarFuncionario.xhtml</to-view-id>
+        </navigation-case>
     </navigation-rule>
     <navigation-rule>
         <from-view-id>/cliente/CadastrarCliente.xhtml</from-view-id>
@@ -58,6 +94,30 @@
         <navigation-case>
             <from-outcome>cadastrarCliente</from-outcome>
             <to-view-id>/cliente/CadastrarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarPlano</from-outcome>
+            <to-view-id>/plano/BuscarPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCliente</from-outcome>
+            <to-view-id>/cliente/BuscarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCargo</from-outcome>
+            <to-view-id>/cargo/CadastrarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCargo</from-outcome>
+            <to-view-id>/cargo/BuscarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarFuncionario</from-outcome>
+            <to-view-id>/funcionario/CadastrarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarFuncionario</from-outcome>
+            <to-view-id>/funcionario/BuscarFuncionario.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
     <navigation-rule>
@@ -82,6 +142,22 @@
             <from-outcome>cadastroPlano</from-outcome>
             <to-view-id>/plano/CadastroPlano.xhtml</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCargo</from-outcome>
+            <to-view-id>/cargo/CadastrarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCargo</from-outcome>
+            <to-view-id>/cargo/BuscarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarFuncionario</from-outcome>
+            <to-view-id>/funcionario/BuscarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarFuncionario</from-outcome>
+            <to-view-id>/funcionario/CadastrarFuncionario.xhtml</to-view-id>
+        </navigation-case>
     </navigation-rule>
     <navigation-rule>
         <from-view-id>/plano/BuscarPlano.xhtml</from-view-id>
@@ -104,6 +180,178 @@
         <navigation-case>
             <from-outcome>buscarPlano</from-outcome>
             <to-view-id>/plano/BuscarPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCargo</from-outcome>
+            <to-view-id>/cargo/CadastrarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCargo</from-outcome>
+            <to-view-id>/cargo/BuscarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarFuncionario</from-outcome>
+            <to-view-id>/funcionario/CadastrarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarFuncionario</from-outcome>
+            <to-view-id>/funcionario/BuscarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/cargo/CadastrarCargo.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>cadastrarCargo</from-outcome>
+            <to-view-id>/cargo/CadastrarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCargo</from-outcome>
+            <to-view-id>/cargo/BuscarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCliente</from-outcome>
+            <to-view-id>/cliente/BuscarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCliente</from-outcome>
+            <to-view-id>/cliente/CadastrarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>home</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastroPlano</from-outcome>
+            <to-view-id>/plano/CadastroPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarPlano</from-outcome>
+            <to-view-id>/plano/BuscarPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarFuncionario</from-outcome>
+            <to-view-id>/funcionario/CadastrarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarFuncionario</from-outcome>
+            <to-view-id>/funcionario/BuscarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/cargo/BuscarCargo.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>buscarCargo</from-outcome>
+            <to-view-id>/cargo/BuscarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCargo</from-outcome>
+            <to-view-id>/cargo/CadastrarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCliente</from-outcome>
+            <to-view-id>/cliente/CadastrarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCliente</from-outcome>
+            <to-view-id>/cliente/BuscarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastroPlano</from-outcome>
+            <to-view-id>/plano/CadastroPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarPlano</from-outcome>
+            <to-view-id>/plano/BuscarPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>home</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarFuncionario</from-outcome>
+            <to-view-id>/funcionario/BuscarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarFuncionario</from-outcome>
+            <to-view-id>/funcionario/CadastrarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/funcionario/CadastrarFuncionario.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>buscarFuncionario</from-outcome>
+            <to-view-id>/funcionario/BuscarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCargo</from-outcome>
+            <to-view-id>/cargo/BuscarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCliente</from-outcome>
+            <to-view-id>/cliente/BuscarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarPlano</from-outcome>
+            <to-view-id>/plano/BuscarPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarFuncionario</from-outcome>
+            <to-view-id>/funcionario/CadastrarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCargo</from-outcome>
+            <to-view-id>/cargo/CadastrarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCliente</from-outcome>
+            <to-view-id>/cliente/CadastrarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastroPlano</from-outcome>
+            <to-view-id>/plano/CadastroPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>index</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/funcionario/BuscarFuncionario.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>buscarFuncionario</from-outcome>
+            <to-view-id>/funcionario/BuscarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCargo</from-outcome>
+            <to-view-id>/cargo/BuscarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarCliente</from-outcome>
+            <to-view-id>/cliente/BuscarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>buscarPlano</from-outcome>
+            <to-view-id>/plano/BuscarPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarFuncionario</from-outcome>
+            <to-view-id>/funcionario/CadastrarFuncionario.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCargo</from-outcome>
+            <to-view-id>/cargo/CadastrarCargo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarCliente</from-outcome>
+            <to-view-id>/cliente/CadastrarCliente.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cadastrarPlano</from-outcome>
+            <to-view-id>/plano/CadastroPlano.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>home</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
 </faces-config>
